@@ -1,0 +1,11 @@
+# Chrome extension release zip files
+releases
+
+# Dependency directories
+node_modules
+
+# Rollup build / generate output
+dist
+
+# Mac
+.DS_Store

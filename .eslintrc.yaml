@@ -1,0 +1,21 @@
+settings: { react: { version: 'detect' } }
+env: { browser: true, es2021: true, node: true, webextensions: true }
+extends:
+  [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended',
+  ]
+parser: '@typescript-eslint/parser'
+plugins: ['react', '@typescript-eslint', 'prettier', 'no-relative-import-paths']
+rules:
+  {
+    'prettier/prettier': 'error',
+    'no-relative-import-paths/no-relative-import-paths':
+      ['error', 'rootDir': 'src'],
+    prefer-template: 'error',
+    arrow-body-style: ['error', 'as-needed'],
+    'react/self-closing-comp': 'error',
+  }
+ignorePatterns: ['dist/*']
